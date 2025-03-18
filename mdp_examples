@@ -1,0 +1,70 @@
+MDP 1: Warehouse Robot Navigation
+Description: A warehouse robot moves between shelves to pick and drop off packages.
+
+States:
+
+Robot’s current position in the warehouse grid
+Whether the robot is carrying a package (yes/no)
+Battery level (high/low)
+Actions:
+
+Move (up, down, left, right)
+Pick up a package
+Drop off a package
+Return to charging station
+Rewards:
+
++
+10
++10 for successfully delivering a package
+−
+1
+−1 for each movement step (encouraging efficiency)
+−
+20
+−20 if the battery runs out before recharging
+MDP 2: Stock Trading Agent
+Description: A stock trading AI decides when to buy, sell, or hold stocks to maximize profit.
+
+States:
+
+Current stock price
+Recent price trends (e.g., moving average)
+Number of shares owned
+Available cash balance
+Actions:
+
+Buy a stock
+Sell a stock
+Hold position
+Rewards:
+
+Profit/loss from buying and selling stocks
+−
+1
+−1 transaction cost for each trade (to prevent excessive trading)
+−
+10
+−10 if the AI runs out of money (encouraging risk management)
+MDP 3: Game-playing AI (Chess)
+Description: A chess-playing AI chooses moves to maximize its chances of winning.
+
+States:
+
+Current board configuration
+Time remaining on the clock
+Number of pieces for each player
+Actions:
+
+Any legal move (e.g., move pawn, capture a piece, castle, etc.)
+Rewards:
+
++
+100
++100 for checkmate (winning the game)
+−
+100
+−100 for being checkmated (losing the game)
+−
+1
+−1 for each move (to encourage quicker victories)
